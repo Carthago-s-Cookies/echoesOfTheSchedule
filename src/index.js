@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./index.css"
 
-import Routing from './routing';
+
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css'
+import HomePage from './components/homePage/HomePage';
 ReactDOM.render(
   <React.StrictMode>
-    <Routing />
+    <HomePage />
   </React.StrictMode>,
   document.getElementById('root')
 );
