@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./index.css"
 
-
-import EchoesOfSchledules from './EchoesOfSchledules';
+import Routing from './routing';
 import reportWebVitals from './reportWebVitals';
-
+import 'antd/dist/antd.css'
 ReactDOM.render(
   <React.StrictMode>
-    <EchoesOfSchledules />
+    <Routing />
   </React.StrictMode>,
   document.getElementById('root')
 );
