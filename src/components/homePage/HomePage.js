@@ -4,6 +4,7 @@ import Schledule from '../schledule/Schledule';
 import Attendance from '../attendance/Attendance';
 import Progress from '../progrss/Progress'
 import GeneralPage from '../general/GeneralPage';
+import SignIn from '../signIn/SignIn';
 
 class HomePage extends React.Component {
     state = {
@@ -34,14 +35,14 @@ class HomePage extends React.Component {
         <Menu.Item key="progress" >
           Оценки
         </Menu.Item>
-       
-       
+        <Menu.Item key="progress" style={{float:'right', width:'auto', textAlign:'center'}} >
+        <SignIn className='menu-submenu' />
+        </Menu.Item>
+        
     
-       
-
-     
+  
       </Menu>
-
+      
         {current == "schledule" && <Schledule />}
         {current == "attendance" && <Attendance />}
         {current == "progress" && <Progress />}

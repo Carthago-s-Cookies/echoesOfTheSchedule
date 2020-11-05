@@ -23,8 +23,7 @@ getData = async () => {
 
     render() {
         return <div style={{margin:'10px'}}>
-            {/* <SignIn className='menu-submenu' /> */}
-
+            
              <PickGroup />
              <PickSubject />
 

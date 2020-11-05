@@ -19,7 +19,6 @@ constructor(props) {
            }
 
 
-            
             { window.innerWidth > 600 &&
             <DatePicker.RangePicker style={{ width: '100%' }} />}
         </div>;
