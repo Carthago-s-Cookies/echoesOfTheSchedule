@@ -3,7 +3,7 @@
 }
 
 @media screen and (max-width: 1920px) {
-    .rowForGenral {width: 400px; margin-left: 20px; }
+    .rowForGenral {width: 400px; margin-left: 20px; height: inherit;}
     .labelOfGeneral {display: block;}
     .colOfGeneral {display: none}
    }

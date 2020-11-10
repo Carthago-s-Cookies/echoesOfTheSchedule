@@ -47,7 +47,7 @@ class LastMisses extends React.Component {
 
     return (
       <>
-        <Row className='rowForGenral' style={{minWidth:260}}>
+        <Row className='rowForGenral' style={{minWidth:260, boxShadow:'0 4px 8px rgba(0,0,0,0.12)', borderRadius: 3}}>
           <Col
             className="colOfGeneral"
             flex="20px"

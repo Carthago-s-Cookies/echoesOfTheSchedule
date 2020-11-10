@@ -26,7 +26,7 @@ class GeneralPage extends React.Component {
         <div
           style={{
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "center",
             flexWrap: "wrap",
           }}
         >

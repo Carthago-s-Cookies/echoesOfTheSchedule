@@ -1,6 +1,5 @@
 import React from "react";
 import { Table, Row, Col, List } from "antd";
-import { purple } from "@ant-design/colors";
 import "./table.css";
 const { Column } = Table;
 
@@ -47,7 +46,7 @@ class TasksForGeneral extends React.Component {
 
     return (
       <>
-        <Row className="rowForGenral" style={{ minWidth: 260 }}>
+        <Row className="rowForGenral" style={{ minWidth: 260, boxShadow:'0 4px 8px rgba(0,0,0,0.12)', borderRadius: 3 }}>
           <Col
             className="colOfGeneral"
             flex="20px"
