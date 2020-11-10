@@ -2,10 +2,6 @@ const express = require("express");
 const path = require("path");
 const admin = require("firebase-admin");
 
-const bodyParser = require("body-parser");
-const { request } = require("express");
-const { clearScreenDown } = require("readline");
-
 const app = express();
 const port = 5000;
 

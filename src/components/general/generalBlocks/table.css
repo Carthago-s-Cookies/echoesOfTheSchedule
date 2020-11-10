@@ -1,3 +1,16 @@
 .ant-table.ant-table-small .ant-table-title, .ant-table.ant-table-small .ant-table-footer, .ant-table.ant-table-small .ant-table-thead > tr > th, .ant-table.ant-table-small .ant-table-tbody > tr > td, .ant-table.ant-table-small tfoot > tr > th, .ant-table.ant-table-small tfoot > tr > td {
     padding: 2px, 2px;
 }
+
+@media screen and (max-width: 1920px) {
+    .rowForGenral {width: 400px; margin-left: 20px; }
+    .labelOfGeneral {display: block;}
+    .colOfGeneral {display: none}
+   }
+
+@media screen and (max-width: 1270px) {
+.rowForGenral {width: 100%; margin-left: 0; margin-bottom: 30px;}
+.labelOfGeneral {display: none;}
+.colOfGeneral {display: block}
+
+}

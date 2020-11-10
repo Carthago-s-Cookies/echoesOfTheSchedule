@@ -14,6 +14,9 @@ class Progress extends React.Component {
           mark091120: 4,
           mark101120: 5,
           mark111120: 1,
+          mark121120: 1,
+          mark131120: 1,
+          mark141120: 1,
         },
         {
           key: "mark091120",
@@ -22,6 +25,9 @@ class Progress extends React.Component {
           mark091120: 5,
           mark101120: 1,
           mark111120: 1,
+          mark121120: 1,
+          mark131120: 1,
+          mark141120: 1,
         },
         {
           key: "mark101120",
@@ -30,6 +36,9 @@ class Progress extends React.Component {
           mark091120: 1,
           mark101120: 1,
           mark111120: 1,
+          mark121120: 1,
+          mark131120: 1,
+          mark141120: 1,
         },
         {
           key: "mark111120",
@@ -38,6 +47,42 @@ class Progress extends React.Component {
           mark091120: 0,
           mark101120: 0,
           mark111120: 1,
+          mark121120: 1,
+          mark131120: 1,
+          mark141120: 1,
+        },
+        {
+          key: "mark121120",
+          name: "Апельсин",
+          mark081120: 0,
+          mark091120: 0,
+          mark101120: 0,
+          mark111120: 1,
+          mark121120: 1,
+          mark131120: 1,
+          mark141120: 1,
+        },
+        {
+          key: "mark131120",
+          name: "Рябина",
+          mark081120: 0,
+          mark091120: 0,
+          mark101120: 0,
+          mark111120: 1,
+          mark121120: 1,
+          mark131120: 1,
+          mark141120: 1,
+        },
+        {
+          key: "mark141120",
+          name: "Крапива",
+          mark081120: 0,
+          mark091120: 0,
+          mark101120: 0,
+          mark111120: 1,
+          mark121120: 1,
+          mark131120: 1,
+          mark141120: 1,
         },
       ],
     };
@@ -68,9 +113,12 @@ class Progress extends React.Component {
 
   render() {
     let door = this.state.data.map((dat) => {
+
+      // Здесь лучше передалть на количество переменных mark иначе если будет слишком мало людей, не будут выводится все оценки
       return (
         <Column
-          title={"Столибик " + dat.key}
+          title={dat.key}
+          width="50px"
           dataIndex={dat.key}
           name={dat.key}
           render={(text, record) => (
@@ -85,11 +133,13 @@ class Progress extends React.Component {
     return (
       <>
         <Table
+          scroll={{ x: 'fit-content' }}
           dataSource={this.state.data}
           size="small"
           pagination={false}
+          sticky="true"
         >
-          <Column title="ФИО" dataIndex="name" name={this.state.data.name} />
+          <Column title="ФИО"  width="100px" dataIndex="name" name={this.state.data.name}  fixed='left'/>
           {door}
         </Table>
       </>
